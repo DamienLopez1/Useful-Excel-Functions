@@ -1,0 +1,17 @@
+Function SumAdjacent(Adjacent As Range, Sumdata As Range, Match As String)
+Dim numrows As Integer
+Dim i As Integer
+Dim Adjacentcolumnname, Sumdatacountname As String
+
+numrows = Adjacent.Count
+
+For i = 1 To numrows
+
+If Adjacent.Cells(i).Value = Match Then
+SumAdjacent = SumAdjacent + Sumdata.Cells(i).Value
+End If
+
+Next
+
+
+End Function
